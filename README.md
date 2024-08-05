@@ -4,4 +4,4 @@
  Very effective when scanning MANY CVs, PDF presentations, PDF books for certain words.
 
  The app supports AND & OR clause when scanning to either search for PDFs with all of the keywords or any of them.
-
+ Files that match keywords are copied (not moved) to corresponding directories based on those keywords.
