@@ -62,10 +62,11 @@ namespace CV_Scanner
 
 
                 var count = 0;
+                string newPath = "";
                 //	var fun = any ? ContainsAnyKeywords : ContainsAllKeywords;
                 if (!all)
                 {
-                    string newPath = Path.Combine("ANY", newDirPath);
+                    newPath = Path.Combine("ANY", newDirPath);
                     if (!Directory.Exists(newPath))
                     {
                         Directory.CreateDirectory(newPath);
@@ -84,7 +85,7 @@ namespace CV_Scanner
                 }
                 else if (all)
                 {
-                    string newPath = Path.Combine("ALL", newDirPath);
+                    newPath = Path.Combine("ALL", newDirPath);
                     if (!Directory.Exists(newPath))
                     {
                         Directory.CreateDirectory(newPath);
@@ -93,7 +94,7 @@ namespace CV_Scanner
                     {
                         if (ContainsAllKeywords(pdfFile, keywords))
                         {
-
+                            count++;
                             string fileName = Path.GetFileName(pdfFile);
                             string destFilePath = Path.Combine(newDirPath, fileName);
                             File.Copy(pdfFile, destFilePath, true);
@@ -104,10 +105,9 @@ namespace CV_Scanner
                // string finalMessage = "Scanning complete : "+count.ToString()+" matches found";
                 string finalMessage = $"Scanning complete : {count} matches found"; //fancy way
 
-                if (!Directory.EnumerateFileSystemEntries(path).Any()) //if the dir is empty (no matches found)
+                if (!Directory.EnumerateFileSystemEntries(newPath).Any()) //if the dir is empty (no matches found)
                 {
-                    finalMessage = "No matches found.";
-                    Directory.Delete(path);
+                    Directory.Delete(newPath);
                 }
                 ShowCompletionDialog(newDirPath, count,finalMessage);
 
@@ -180,6 +180,7 @@ namespace CV_Scanner
                             {
                                 if (line.Contains(keyword.Trim(), StringComparison.OrdinalIgnoreCase))// letter case doesnt matter
                                 {
+                                    Console.WriteLine("znalazlem!");
                                     return true;
                                 }
 
@@ -213,7 +214,7 @@ namespace CV_Scanner
                                 if (line.Contains(keyword.Trim(), StringComparison.OrdinalIgnoreCase))// letter case doesnt matter
                                 {
                                     keywordMap[keyword] = true;
-
+                                    Console.WriteLine("znalazlem!");
                                     //updating currentKeywords when there is change.
                                     currentKeywords = keywordMap.Where(keyword => !keyword.Value).Select(keyword => keyword.Key).ToArray();
                                 }

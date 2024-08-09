@@ -143,7 +143,7 @@
             Controls.Add(btnBrowse);
             Controls.Add(labelChoose);
             Name = "Form1";
-            Text = "CV Keywords Manager";
+            Text = "PDF Keyword Scanner";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
