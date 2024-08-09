@@ -14,7 +14,7 @@ Release v 1.0
 Introducing **PDF Keyword Scanner v1.0**, a fast and easy-to-use tool designed to help you quickly search and filter multiple PDF files based on given keywords. It's your ctrl+f for many PDFs and many words at a time!
 
 ## 📂 How to Run:
-1. **⬇️ Download** the latest release by clicking on the assets below.
+1. **⬇️ Download** the latest release.
 2. **📦 Extract** the contents to a directory of your choice.
 3. **▶️ Run** the application by double-clicking on `PDF_Keyword_Scanner.exe`. All the downloaded files must stay in the same directory.
 
