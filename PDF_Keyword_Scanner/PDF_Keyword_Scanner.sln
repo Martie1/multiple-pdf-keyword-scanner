@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDF_Keyword_Scanner", "PDF_Keyword_Scanner\PDF_Keyword_Scanner.csproj", "{D85192A3-82EC-491E-B84A-941F2427DEBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D85192A3-82EC-491E-B84A-941F2427DEBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D85192A3-82EC-491E-B84A-941F2427DEBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D85192A3-82EC-491E-B84A-941F2427DEBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D85192A3-82EC-491E-B84A-941F2427DEBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5897179B-6F47-477D-8DE7-2DF07C5C80B1}
+	EndGlobalSection
+EndGlobal
