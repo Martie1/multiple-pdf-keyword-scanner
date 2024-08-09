@@ -1,16 +1,6 @@
-# multiple-pdf-keyword-scanner
- A .NET Core application for Windows that scans all PDFs in a specified folder and organizes them into new folders based on specified keywords.
- Perfect ctrl + f4, but on all PDF files at once with many keywords being searched!. Just select the folder, where you store all your pdf files and type in keywords.
- Very effective when scanning MANY CVs, PDF presentations, PDF books for certain words.
-
- The app supports AND & OR clause when scanning to either search for PDFs with all of the keywords or any of them.
- Files that match keywords are copied (not moved) to corresponding directories based on those keywords.
-
-
-
 Release v 1.0
 # 📦 PDF Keyword Scanner v1.0
-
+A .NET Core application for Windows
 Introducing **PDF Keyword Scanner v1.0**, a fast and easy-to-use tool designed to help you quickly search and filter multiple PDF files based on given keywords. It's your ctrl+f for many PDFs and many words at a time!
 
 ## 📂 How to Run:
