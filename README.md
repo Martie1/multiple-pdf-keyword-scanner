@@ -1,6 +1,6 @@
 Release v 1.0
 # 📦 PDF Keyword Scanner v1.0
-A .NET Core application for Windows
+A .NET Framework application for Windows
 Introducing **PDF Keyword Scanner v1.0**, a fast and easy-to-use tool designed to help you quickly search and filter multiple PDF files based on given keywords. It's your ctrl+f for many PDFs and many words at a time!
 
 ## 📂 How to Run:
